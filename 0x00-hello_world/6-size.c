@@ -12,10 +12,10 @@ long longexample;
 long long llexample;
 float floatexample;
 
-printf("Size of a char: " sizeof(charexample));
-printf("Size of an int: " sizeof(intexample));
-printf("Size of a long int: " sizeof(longexample));
-printf("Size of a long long int: " sizeof(llexample));
-printf("Size of a float: " sizeof(floatexample));
+printf("Size of a char:%d ", sizeof(charexample));
+printf("Size of an int:%d ", sizeof(intexample));
+printf("Size of a long int:%d ", sizeof(longexample));
+printf("Size of a long long int:%d ", sizeof(llexample));
+printf("Size of a float:%d ", sizeof(floatexample));
 return (0);
 }
