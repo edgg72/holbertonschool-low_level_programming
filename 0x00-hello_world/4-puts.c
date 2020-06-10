@@ -1,13 +1,10 @@
-/*
- *exercise 4 0x00 hello world
- */
 #include <stdio.h>
-
+/**
+*main - using puts for exercise 4
+*Return: - returning an int
+*/
 int main(void)
 {
-/*
- *printing message
- */
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 
