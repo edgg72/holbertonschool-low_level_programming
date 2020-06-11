@@ -1,14 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
-*main - printing numbers
-*Return: returning an int
+* main - printing numbers
+*Return: returns an int
 */
+
 int main(void)
 {
-int num;
-for (num = 0; num < 10; num++)
+int n = '0';
+while (n <= '9')
 {
-putchar(num);
+putchar(n++);
 }
 putchar('\n');
 return (0);
