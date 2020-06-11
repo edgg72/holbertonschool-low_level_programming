@@ -5,7 +5,6 @@
 */
 int main(void)
 {
-int n = 1;
 if (n < 0)
 {
 printf("%d is negative\n", n);
