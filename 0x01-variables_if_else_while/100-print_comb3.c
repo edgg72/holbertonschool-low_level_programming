@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-int i, j, aux;
+int i, j;
 for (i = 48; i < 57; i++)
 {
 j = i + 1;
