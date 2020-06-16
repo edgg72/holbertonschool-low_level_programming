@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <ctype.h>
 /**
 * _islower - check uppercase or otherwise.
 * @c: evaluation
