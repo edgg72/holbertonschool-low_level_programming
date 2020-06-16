@@ -17,7 +17,10 @@ x = i * j;
 _putchar(x);
 _putchar(',');
 _putchar(' ');
+if(x < 10)
+{
 _putchar(' ');
+}
 }
 _putchar('\n');
 }
