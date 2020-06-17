@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include<stdio.h>
+
 /**
 * jack_bauer - prints hours and minutes.
 *
