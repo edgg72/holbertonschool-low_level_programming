@@ -21,12 +21,12 @@ c = 0;
 d = 0;
 for (minute = 0; minute < 60; minute++)
 {
-_putchar(a + '0');
-_putchar(b + '0');
-_putchar(':');
-_putchar(c + '0');
-_putchar(d + '0');
-_putchar('\n');
+putchar(a + '0');
+putchar(b + '0');
+putchar(':');
+putchar(c + '0');
+putchar(d + '0');
+putchar('\n');
 if (d == 9)
 {
 d = -1;
