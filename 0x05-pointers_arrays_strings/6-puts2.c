@@ -16,7 +16,7 @@ c[i] = *(str + i);
 i++;
 }
 i = 0;
-while (i < 11)
+while (i < 10)
 {
 if (i == 0)
 {
