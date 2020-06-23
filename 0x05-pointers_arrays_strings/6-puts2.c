@@ -18,16 +18,11 @@ i++;
 i = 0;
 while (i < 10)
 {
-if (i == 0)
-{
+
+
 _putchar(c[i]);
-i++;
-}
-if (i % 2 == 0)
-{
-_putchar(c[i]);
-}
-i++;
+
+i = i + 2;
 }
 _putchar('\n');
 }
