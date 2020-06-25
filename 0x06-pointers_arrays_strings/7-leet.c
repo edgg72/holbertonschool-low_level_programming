@@ -8,28 +8,18 @@
 
 char *leet(char *x)
 {
-int i = 0;
+int i = 0, j = 0;
+char letters[] = "aAeEoOtTlL";
+char numbers[] = "4433007711";
 while (*(x + i) != '\0')
 {
-if (*(x + i) == 'a' || *(x + i) == 'A')
+while (j < 9)
 {
-*(x + i) = 52;
+if (letters[j] == *(x + i))
+{
+*(x + i) = numbers[j];
 }
-else if (*(x + i) == 'e' || *(x + i) == 'E')
-{
-*(x + i) = 51;
-}
-else if (*(x + i) == 'o' ||  *(x + i) == 'O')
-{
-*(x + i) = 48;
-}
-else if (*(x + i) == 't' || *(x + i) == 'T')
-{
-*(x + i) = 55;
-}
-else if (*(x + i) == 'l' || *(x + i) == 'L')
-{
-*(x + i) = 49;
+j++;
 }
 i++;
 }
