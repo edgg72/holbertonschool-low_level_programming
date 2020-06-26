@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 
 /**
  * cap_string - capitalizes starting letters
@@ -9,25 +9,21 @@ B#include "holberton.h"
 char *cap_string(char *x)
 
 {
-int i = 0, j;
-char a[] = " \t\n,;.!?\"(){}";
-while (*(x + i))
+int i;
+if (x[0] >= 'a' && x[0] <= 'z')
 {
-if (*(x + i) >= 'a' && *(x + i) <= 'z')
-{
-if (i == 0)
-*(x + i) -= 'a' - 'A';
-else
-{
-for (j = 0; j <= 12; j++)
-{
-if (a[j] == *(x + i - 1))
-*(x + i) -= 'a' - 'A';
+x[0] = x[0] - 32;
 }
+for (i = 1; x[i] != '\0'; i++)
+{
+if ((x[i - 1] == ' ' || x[i - 1] == '\n' || x[i - 1] == '\t'
+|| x[i - 1] == ',' || x[i - 1] == ';' || x[i - 1] == '!'
+|| x[i - 1] == '?' || x[i - 1] == '"' || x[i - 1] == '('
+|| x[i - 1] == ')' || x[i - 1] == '{' || x[i - 1] == '}'
+|| x[i - 1] == '.') && (x[i] > 'a' && x[i] < 'z'))
+{
+x[i] = x[i] - 32;
 }
-}
-i++;
 }
 return (x);
-
 }
