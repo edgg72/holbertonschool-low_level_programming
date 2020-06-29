@@ -7,7 +7,7 @@
  * Return: substring.
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 
 {
 unsigned int i, j;
@@ -18,7 +18,7 @@ for (j = 0; accept[j]; j++)
 if (s[i] == accept[j])
 break;
 }
-if (accept[j])
+if (accept[j] != '\0')
 return (s + i);
 }
 return (0);
