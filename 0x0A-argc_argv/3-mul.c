@@ -13,7 +13,8 @@ int result;
 result = atoi(argv[1]) * atoi(argv[2]);
 if (argc != 3)
 {
-printf("Error");
+puts("Error");
+return (1);
 }
 else
 {
