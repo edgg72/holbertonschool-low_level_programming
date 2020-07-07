@@ -1,1 +1,1 @@
-this will describe this project
+Project 0x00-hello_world
