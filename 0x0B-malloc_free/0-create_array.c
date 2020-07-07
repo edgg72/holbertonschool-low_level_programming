@@ -19,6 +19,10 @@ return (NULL);
 }
 else
 {
+if (p == NULL)
+{
+return (NULL);
+}
 unsigned int i;
 for (i = 0; i < size; i++)
 {
