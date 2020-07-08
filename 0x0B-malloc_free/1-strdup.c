@@ -24,7 +24,7 @@ for (arraysize = 0; str[arraysize]; arraysize++)
 
 arraysize++;
 
-p = (char *)malloc(arraysize * sizeof(char));
+p = (char *)malloc(arraysize *sizeof(char));
 
 if (p == NULL)
 {
