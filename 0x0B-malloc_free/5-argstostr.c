@@ -27,7 +27,7 @@ countComplete++;
 }
 countComplete++;
 
-s = malloc(n * sizeof(char));
+s = malloc(countComplete * sizeof(char));
 
 if (s == NULL)
 return (NULL);
