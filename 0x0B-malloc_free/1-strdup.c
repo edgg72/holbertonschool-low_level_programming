@@ -17,15 +17,16 @@ if (str == NULL)
 return (NULL);
 }
 
-for (arraysize = 1; str[arraysize] != '\0'; arraysize++)
+for (arraysize = 0; str[arraysize] != '\0'; arraysize++)
 {
 ;
 }
 
-if (arraysize <= 1)
+if (arraysize < 1)
 {
 return (NULL);
 }
+arraysize++;
 
 
 
