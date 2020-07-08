@@ -30,5 +30,6 @@ for (i = 0; i < arraysize + 1; i++)
 {
 p[i] = str[i];
 }
+ p[i] = '\0';
 return (p);
 }
