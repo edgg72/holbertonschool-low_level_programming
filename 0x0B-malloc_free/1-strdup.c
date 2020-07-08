@@ -16,21 +16,32 @@ if (str == NULL)
 {
 return (NULL);
 }
-arraysize = sizeof(str);
-if (arraysize == 0)
+
+for (arraysize = 1; str[arraysize] != '\0'; arraysize++)
+{
+;
+}
+
+if (arraysize <= 1)
 {
 return (NULL);
 }
-p = (char *)malloc(arraysize *sizeof(char));
+
+
+
+p = (char *)malloc(arraysize * sizeof(char));
+
 if (p == NULL)
 {
 free(p);
 return (NULL);
 }
+
 for (i = 0; i < arraysize + 1; i++)
 {
 p[i] = str[i];
 }
+
 p[i] = '\0';
 return (p);
 }
