@@ -24,12 +24,13 @@ return (NULL);
 p = (char *)malloc(arraysize *sizeof(char));
 if (p == NULL)
 {
+free(p);
 return (NULL);
 }
 for (i = 0; i < arraysize + 1; i++)
 {
 p[i] = str[i];
 }
- p[i] = '\0';
+p[i] = '\0';
 return (p);
 }
