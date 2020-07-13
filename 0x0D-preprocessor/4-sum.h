@@ -2,6 +2,6 @@
 #define _SUM_H_
 
 
-#define SUM(x,y) ((x)+(y))
+#define SUM(x, y) ((x) + (y))
 
 #endif /* _SUM_H_ */
