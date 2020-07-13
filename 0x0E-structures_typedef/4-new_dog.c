@@ -23,7 +23,7 @@ for (length1 = 0; name[length1]; length1++)
 ;
 }
 length1++;
-dog->name = malloc(length1 * sizeof(char));
+dog->name = malloc(length1 *sizeof(char));
 if (dog->name == NULL)
 {
 free(dog);
