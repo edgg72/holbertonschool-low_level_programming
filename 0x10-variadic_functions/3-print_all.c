@@ -21,14 +21,14 @@ void print_c(va_list c)
  */
 void print_s(va_list s)
 {
-	char *s = va_arg(s, char *);
+	char *str = va_arg(s, char *);
 
-	if (s == NULL)
+	if (str == NULL)
 	{
-		s = "(nil)";
+		str = "(nil)";
 	}
 
-	printf("%s", s);
+	printf("%s", str);
 }
 
 /**
