@@ -15,7 +15,14 @@ unsigned int i;
 aux = h;
 for (i = 0; aux; i++)
 {
+if(aux->str)
+{
 printf("[%u] %s\n", aux->len, aux->str);
+}
+else
+{
+printf("[0] (nil)\n");
+}
 aux = aux->next;
 }
 return (i);
