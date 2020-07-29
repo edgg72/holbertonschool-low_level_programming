@@ -19,7 +19,7 @@ if (aux->str)
 {
 printf("[%u] %s\n", aux->len, aux->str);
 }
-else
+if (aux->str == NULL)
 {
 printf("[0] (nil)\n");
 }
