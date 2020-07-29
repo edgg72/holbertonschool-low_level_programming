@@ -15,7 +15,7 @@ unsigned int i;
 aux = h;
 for (i = 0; aux; i++)
 {
-if(aux->str)
+if (aux->str)
 {
 printf("[%u] %s\n", aux->len, aux->str);
 }
