@@ -12,6 +12,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int result, i, pow;
+
 	result = 0;
 	i = 0;
 	pow = 1;
