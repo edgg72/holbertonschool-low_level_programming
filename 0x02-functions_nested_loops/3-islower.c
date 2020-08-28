@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <ctype.h>
+
 /**
 * _islower - check uppercase or otherwise.
 * @c: evaluation
@@ -9,15 +10,12 @@
 int _islower(int c)
 {
 
-
-if (c >= 'a' && c <= 'z')
-{
-return (1);
-}
-else
-{
-return (0);
-}
-
-
+  if (c >= 'a' && c <= 'z')
+  {
+    return (1);
+  }
+  else
+  {
+    return (0);
+  }
 }
