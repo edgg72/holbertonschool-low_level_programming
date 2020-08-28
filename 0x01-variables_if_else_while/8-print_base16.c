@@ -8,8 +8,8 @@
 int main(void)
 {
   
-long num;
-char a;
+  long num;
+  char a;
 
   for (num = 48; num < 58; num++)
   {
