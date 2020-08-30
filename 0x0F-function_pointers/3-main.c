@@ -13,26 +13,26 @@
 int main(int argc, char *argv[])
 {
 
-int arg1, arg3, r;
-int (*f)(int, int);
+  int arg1, arg3, r;
+  int (*f)(int, int);
 
-if (argc != 4)
-{
-printf("Error\n");
-exit(98);
-}
+  if (argc != 4)
+  {
+    printf("Error\n");
+    exit(98);
+  }
 
-arg1 = atoi(argv[1]);
-arg3 = atoi(argv[3]);
-f = get_op_func(argv[2]);
+  arg1 = atoi(argv[1]);
+  arg3 = atoi(argv[3]);
+  f = get_op_func(argv[2]);
 
-if (f == NULL)
-{
-printf("Error\n");
-exit(99);
-}
+  if (f == NULL)
+  {
+    printf("Error\n");
+    exit(99);
+  }
 
-r = f(arg1, arg3);
-printf("%d\n", r);
-return (0);
+  r = f(arg1, arg3);
+  printf("%d\n", r);
+  return (0);
 }
