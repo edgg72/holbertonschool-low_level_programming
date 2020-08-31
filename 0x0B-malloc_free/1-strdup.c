@@ -10,33 +10,28 @@
 
 char *_strdup(char *str)
 {
-char *p;
-unsigned int i, arraysize;
-if (str == NULL)
-{
-return (NULL);
-}
+  char *p;
+  unsigned int i, arraysize;
 
-for (arraysize = 0; str[arraysize]; arraysize++)
-{
-;
-}
+  if (str == NULL)
+    return (NULL);
 
-arraysize++;
+  for (arraysize = 0; str[arraysize]; arraysize++)
+    ;
 
-p = (char *)malloc(arraysize *sizeof(char));
+  arraysize++;
 
-if (p == NULL)
-{
-free(p);
-return (NULL);
-}
+  p = (char *)malloc(arraysize *sizeof(char));
 
-for (i = 0; i < arraysize + 1; i++)
-{
-p[i] = str[i];
-}
+  if (p == NULL)
+  {
+    free(p);
+    return (NULL);
+  }
 
-p[i] = '\0';
-return (p);
+  for (i = 0; i < arraysize + 1; i++)
+    p[i] = str[i];
+
+  p[i] = '\0';
+  return (p);
 }
